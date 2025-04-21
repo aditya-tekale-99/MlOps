@@ -19,6 +19,6 @@ jobs:
         run: |
           pip install -r requirements.txt
 
-      - name: Sanity check: Load model
+      - name: "Sanity check: Load model"
         run: |
           python -c "import joblib; joblib.load('model.pkl')"
